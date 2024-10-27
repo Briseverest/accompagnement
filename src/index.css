@@ -1,28 +1,24 @@
-/* Réinitialiser les marges, padding et box-sizing */
+/* Réinitialiser tous les éléments */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Appliquer un fond noir globalement et éliminer les scrollbars */
+/* Forcer le fond noir pour tout l'écran */
 html, body, #root {
   background-color: black;
+  min-height: 100vh;
   height: 100%;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
-/* Style pour le texte et le lissage des polices */
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* Style pour le code (optionnel, selon l'usage) */
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Empêcher le conteneur principal de générer une marge */
+#root {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
