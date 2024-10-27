@@ -1,5 +1,19 @@
-body {
+/* Réinitialiser les marges, padding et box-sizing */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Appliquer un fond noir globalement et éliminer les scrollbars */
+html, body, #root {
+  background-color: black;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Style pour le texte et le lissage des polices */
+body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -7,6 +21,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Style pour le code (optionnel, selon l'usage) */
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
