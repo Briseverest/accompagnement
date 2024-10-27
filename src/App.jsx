@@ -56,7 +56,7 @@ const styles = {
     color: "#fff",
   },
   banner: {
-    width: "100%",
+    width: "0%",
     backgroundColor: "#000",
     padding: "10px 0",
     display: "flex",
