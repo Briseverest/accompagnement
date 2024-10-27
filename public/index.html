@@ -5,51 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    /* Réinitialiser les marges et le padding sur tous les éléments */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-
-    /* S'assurer que tout le document a un fond noir */
     html, body {
+      height: 100%;
       background-color: black;
-      color: white;
-      min-height: 100vh;
       overflow: hidden;
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
-    }
-
-    /* Style pour que le conteneur principal occupe toute la page */
-    #root {
-      width: 100%;
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    /* Pour forcer la vidéo ou les iframes à ne pas ajouter de marges */
-    iframe, video {
-      display: block;
-      max-width: 100%;
-      height: auto;
+      color: white;
     }
   </style>
 </head>
 <body>
-  <div id="root">
-    <!-- Contenu ici, par exemple une vidéo -->
-    <video controls autoplay loop muted>
-      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-      Votre navigateur ne supporte pas la vidéo.
-    </video>
-  </div>
-
-  <script type="module" src="/src/index.jsx"></script>
+  <h1>Test de fond noir sans scripts</h1>
 </body>
 </html>
