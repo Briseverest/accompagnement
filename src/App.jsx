@@ -8,7 +8,7 @@ function VSL() {
   return (
     <div style={styles.container}>
       <div style={styles.banner}>
-      <img src="/accompagnement/logo.png" alt="Logo" style={{ width: '80px', height: 'auto' }} />
+      <img src="/accompagnement/logo.png" alt="Logo" style={{ width: '90px', height: 'auto' }} />
       </div>
       <h1 style={styles.title}>
         Booste Tes Ventes en <span style={{ color: "green" }}>E-commerce</span>{" "}
@@ -62,10 +62,10 @@ const styles = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    marginBottom: "0px",
+    marginBottom: "-10px",
   },
   logo: {
-    height: "80px",
+    height: "90px",
   },
   title: {
     fontSize: "2.4em",
