@@ -2,7 +2,7 @@ import React from "react";
 
 function VSL() {
   const handleClick = () => {
-    window.location.href = "https://forms.gle/jmCQyL3em6amvqQk9";
+    window.location.href = "https://tinyurl.com/formulaire-briseverest";
   };
 
   return (
